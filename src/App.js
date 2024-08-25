@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect } from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { Landing__Page, AboutMe__Page, ContactMe__Page } from './containers'
+import { Showcase, Navbar } from './components'
+
+gsap.registerPlugin(ScrollTrigger); 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Landing__Page />
+      <Showcase />
+      <AboutMe__Page />
     </div>
   );
 }

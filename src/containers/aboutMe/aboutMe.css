@@ -1,0 +1,13 @@
+.website__aboutMe__container {
+    height: 85vh;
+}
+
+.background-star {
+    position: absolute;
+    object-fit: cover;
+    background-color: black;
+    height: 85%;
+    width: 100%;
+
+    z-index: -1;
+}
